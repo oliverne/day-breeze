@@ -1,0 +1,68 @@
+{
+  "name": "@olv/day-breeze-web",
+  "description": "Day Breeze. Demo Web App.",
+  "keywords": [],
+  "version": "0.0.1",
+  "homepage": "",
+  "bugs": "",
+  "license": "MIT",
+  "main": "dist/index.html",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": "packages/day-breeze-web"
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  },
+  "scripts": {
+    "start": "yarn dev",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "build": "shx rm -f dist/* && cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "test": "jest --bail",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@reach/router": "1.3.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "tslib": "1.10.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^25.1.1",
+    "@types/react": "16.9.19",
+    "@types/react-dom": "16.9.5",
+    "@typescript-eslint/eslint-plugin": "2.19.0",
+    "@typescript-eslint/parser": "2.19.0",
+    "clean-webpack-plugin": "3.0.0",
+    "cross-env": "7.0.0",
+    "css-hot-loader": "1.4.4",
+    "css-loader": "3.4.2",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "friendly-errors-webpack-plugin": "1.7.0",
+    "html-webpack-plugin": "3.2.0",
+    "jest": "25.1.0",
+    "mini-css-extract-plugin": "0.9.0",
+    "node-sass": "4.13.1",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "prettier": "1.19.1",
+    "react-test-renderer": "16.12.0",
+    "sass-loader": "8.0.2",
+    "shx": "0.3.2",
+    "terser-webpack-plugin": "2.3.4",
+    "ts-jest": "25.2.0",
+    "ts-loader": "6.2.1",
+    "typescript": "3.7.5",
+    "webpack": "4.41.5",
+    "webpack-bundle-analyzer": "3.6.0",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.2",
+    "webpackbar": "4.0.0"
+  }
+}
