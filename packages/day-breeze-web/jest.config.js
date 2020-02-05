@@ -1,4 +1,12 @@
 module.exports = {
+  globals: {
+    'ts-jest': {
+      diagnostics: {
+        warnOnly: true
+      }
+    }
+  },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   preset: 'ts-jest',
   moduleNameMapper: {
     '^/src/(.*)$': '<rootDir>/src/$1'
