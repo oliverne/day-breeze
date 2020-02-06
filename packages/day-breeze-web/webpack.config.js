@@ -27,6 +27,7 @@ module.exports = {
     overlay: true,
     hot: true,
     inline: true,
+    historyApiFallback: true,
     publicPath: '/'
   },
   entry: {
