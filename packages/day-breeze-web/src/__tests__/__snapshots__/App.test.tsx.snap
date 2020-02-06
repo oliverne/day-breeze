@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    style="outline: none;"
+    tabindex="-1"
+  >
+    <div
+      class="home"
+    >
+      <div
+        class="hero"
+      >
+        <div
+          class="hero-body"
+        >
+          <h1>
+            Day Breeze
+          </h1>
+          <p>
+            Daily Memo
+          </p>
+          <a
+            href="/calendar"
+          >
+            <button
+              class="btn btn-lg login"
+              type="button"
+            >
+              FREE LOGIN
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
