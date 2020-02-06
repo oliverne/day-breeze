@@ -1,0 +1,38 @@
+body {
+  font-family: 'bitter', sans-serif;
+}
+.home {
+  text-align: center;
+  background: url(./images//bg-breeze.jpg);
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.7);
+}
+.home .hero {
+  height: 100vh;
+  padding-top: 6rem;
+}
+.home .hero-body {
+  padding: 0 2rem;
+}
+.home h1 {
+  letter-spacing: -1px;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.25em;
+}
+.home .login {
+  position: relative;
+  top: 48vh;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  padding-left: 5em;
+  padding-right: 5em;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+}
+.calendar.calendar-lg .calendar-body .calendar-date {
+  height: 4rem;
+}
