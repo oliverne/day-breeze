@@ -8,15 +8,15 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const WebpackBar = require('webpackbar')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-
 const pkg = require('./package.json')
+
 const IS_DEV = process.env.NODE_ENV !== 'production'
 const IS_PROD = !IS_DEV
 const OUTPUT_PATH = path.join(__dirname, 'dist')
 const SITE_TITLE = pkg.description
 
 function DummyPlugin() {}
-DummyPlugin.prototype.apply = function(/* compiler */) {}
+DummyPlugin.prototype.apply = function noop(/* compiler */) {}
 
 module.exports = {
   stats: 'errors-only',
