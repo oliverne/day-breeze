@@ -1,4 +1,5 @@
 module.exports = {
+  preset: 'ts-jest',
   globals: {
     'ts-jest': {
       diagnostics: {
@@ -7,7 +8,6 @@ module.exports = {
     }
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  preset: 'ts-jest',
   moduleNameMapper: {
     '^/src/(.*)$': '<rootDir>/src/$1'
   },

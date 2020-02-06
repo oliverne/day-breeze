@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true
+    es6: true,
+    jest: true
   },
   extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
   globals: {
@@ -18,6 +19,9 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'import/no-absolute-path': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-filename-extension': 'off'
   },
