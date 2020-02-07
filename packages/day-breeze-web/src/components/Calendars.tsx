@@ -43,13 +43,13 @@ export function Calendars() {
         </div>
         <div className="calendar-body">
           {prevMonth.days.map(day => (
-            <CalDate day={day} key={`prev${day}`} prevMonth />
+            <CalDate day={day} key={day.toString()} prevMonth />
           ))}
           {thisMonth.days.map(day => (
-            <CalDate day={day} key={`curr${day}`} />
+            <CalDate day={day} key={day.toString()} />
           ))}
           {nextMonth.days.map(day => (
-            <CalDate day={day} key={`next${day}`} nextMonth />
+            <CalDate day={day} key={day.toString()} nextMonth />
           ))}
         </div>
       </div>
