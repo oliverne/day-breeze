@@ -18,7 +18,7 @@
   "scripts": {
     "start": "yarn dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
-    "build": "shx rm -f dist/* && cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "build": "shx rm -rf dist/* && cross-env NODE_ENV=production webpack --config webpack.config.js",
     "test": "jest",
     "test:watch": "jest --runInBand --bail --watch",
     "test:coverage": "jest --coverage"
