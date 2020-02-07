@@ -12,6 +12,6 @@ describe('dateUtils', () => {
     const next = getNextVisibleDate(2020, 1)
     expect(next.year).toBe(2020)
     expect(next.month).toBe(2)
-    expect(next.days).toEqual(expect.arrayContaining([1, 2, 3, 4, 5, 6, 7, 8]))
+    expect(next.days).toEqual([1, 2, 3, 4, 5, 6, 7, 8])
   })
 })
