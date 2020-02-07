@@ -34,7 +34,7 @@ export function useCalendar(year?: number, month?: number): IUseCalendar {
 
   const monthTitle = MONTH_TITLES[thisMonth.month - 1]
 
-  const setYearMonth = (y: number, m: number) => {
+  const setYearMonth = useCallback((y: number, m: number) => {
     setThisMonth({
       year: y,
       month: m,
@@ -42,23 +42,23 @@ export function useCalendar(year?: number, month?: number): IUseCalendar {
     })
     setPrevMonth(getPrevVisibleDate(y, m))
     setNextMonth(getNextVisibleDate(y, m))
-  }
+  }, [])
 
   const goPrevMonth = useCallback(
     () => setYearMonth(prevMonth.year, prevMonth.month),
-    [prevMonth]
+    [prevMonth, setYearMonth]
   )
 
   const goNextMonth = useCallback(
     () => setYearMonth(nextMonth.year, nextMonth.month),
-    [nextMonth]
+    [nextMonth, setYearMonth]
   )
 
   useEffect(() => {
     const now = new Date()
     setYearMonth(year || now.getFullYear(), month || now.getMonth() + 1)
     return () => {}
-  })
+  }, [year, month, setYearMonth])
 
   return {
     prevMonth,
