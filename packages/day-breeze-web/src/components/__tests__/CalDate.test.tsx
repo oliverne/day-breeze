@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import { CalDate } from '/src/components/CalDate'
+import { CalDate } from '../CalDate'
 
 describe('<CalDate />', () => {
   test('prop `day` as number', () => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import { useCalendar } from '/src/hooks/useCalendar/index'
-import { CalDate } from '/src/components/CalDate'
+import { useCalendar } from '../hooks/useCalendar/index'
+import { CalDate } from './CalDate'
 
 export function Calendars() {
   const {
