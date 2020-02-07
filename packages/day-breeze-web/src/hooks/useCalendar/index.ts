@@ -58,7 +58,7 @@ export function useCalendar(year?: number, month?: number): IUseCalendar {
     const now = new Date()
     setYearMonth(year || now.getFullYear(), month || now.getMonth() + 1)
     return () => {}
-  }, [])
+  })
 
   return {
     prevMonth,
