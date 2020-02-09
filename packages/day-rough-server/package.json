@@ -1,0 +1,47 @@
+{
+  "name": "@olv/day-rough-server",
+  "description": "Day Rough - API Server",
+  "keywords": [],
+  "version": "0.0.1",
+  "homepage": "",
+  "bugs": "",
+  "license": "MIT",
+  "main": "dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": "packages/day-rough-server"
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  },
+  "scripts": {
+    "start": "yarn build && node dist/main.js",
+    "dev": "cross-env NODE_ENV=development ts-node-dev --debounce 1000 --watch src/**/*.ts -- src/main.ts",
+    "build": "rimraf dist/* && cross-env NODE_ENV=production tsc --build --pretty",
+    "test": "jest",
+    "test:watch": "jest --runInBand --bail --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "lodash": "4.17.15"
+  },
+  "devDependencies": {
+    "@types/jest": "25.1.1",
+    "@types/lodash": "4.14.149",
+    "@typescript-eslint/eslint-plugin": "2.19.0",
+    "@typescript-eslint/parser": "2.19.0",
+    "cross-env": "7.0.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-import": "2.20.1",
+    "jest": "25.1.0",
+    "prettier": "1.19.1",
+    "rimraf": "^3.0.1",
+    "ts-jest": "25.2.0",
+    "ts-node": "8.6.2",
+    "ts-node-dev": "1.0.0-pre.44",
+    "typescript": "3.7.5"
+  }
+}
