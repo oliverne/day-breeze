@@ -23,7 +23,7 @@ module.exports = {
   mode: IS_DEV ? 'development' : 'production',
   devtool: IS_DEV ? 'inline-source-map' : 'source-map',
   devServer: {
-    port: 9000,
+    port: 5000,
     overlay: true,
     hot: true,
     inline: true,
