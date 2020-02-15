@@ -1,6 +1,6 @@
 export interface IBrzItem {
   cid?: string
-  id: string
+  id?: string
   title: string
   content: string
   labels: string[]
@@ -11,7 +11,7 @@ export interface IBrzItem {
 export const ADD_ITEM = 'ADD_ITEM'
 interface IAddItemAction {
   type: typeof ADD_ITEM
-  payload: IBrzItem 
+  payload: IBrzItem
 }
 
 export type IBrzItemActions = IAddItemAction
@@ -19,10 +19,7 @@ export type IBrzItemActions = IAddItemAction
 export function itemReducer(state: IBrzItem[] = [], action: IBrzItemActions) {
   switch (action.type) {
     case 'ADD_ITEM':
-      return [
-        ...state,
-        action.payload
-      ]
+      return [...state, action.payload]
     default:
       throw new Error('Invalid action type')
   }
