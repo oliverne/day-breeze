@@ -1,21 +1,24 @@
 body {
   font-family: 'bitter', sans-serif;
 }
-.home {
+
+.Home {
   text-align: center;
   background: url(./images/bg-breeze.jpg);
   background-size: cover;
   background-position: 50% 50%;
   color: rgba(255, 255, 255, 0.7);
 }
-.home .hero {
-  height: 100vh;
+.Home .hero {
+  box-sizing: border-box;
+  height: calc((var(--vh, 1vh) * 100));
   padding-top: 6rem;
+  background: rgba(0,0,0,0.15);
 }
-.home .hero-body {
+.Home .hero-body {
   padding: 0 2rem;
 }
-.home h1 {
+.Home h1 {
   letter-spacing: -1px;
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.7);
@@ -23,7 +26,7 @@ body {
   padding-bottom: 0.4em;
   margin-bottom: 0.25em;
 }
-.home .login {
+.Home .login {
   position: relative;
   top: 48vh;
   border-radius: 5px;
@@ -34,6 +37,73 @@ body {
   border-color: rgba(255, 255, 255, 0.4);
   color: rgba(255, 255, 255, 0.9);
 }
-.calendar.calendar-lg .calendar-body .calendar-date {
-  height: 4rem;
+
+.Calendars.calendar {
+  box-sizing: border-box;
+  border: none;
+  height: calc((var(--vh, 1vh) * 100));
+}
+.Calendars .calendar-nav {
+  background: none;
+  padding: .8rem .4rem .6rem .4rem;
+}
+.Calendars .calendar-header {
+  background: none;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.Calendars .calendar-container {
+  /* MenuBar height: 103px */
+  height: calc(100% - 103px);
+}
+.Calendars .calendar-body {
+  /* calendar-nav: 68px, calendar-header: 46px */
+  height: calc(100% - 68px - 46px);
+  justify-content: space-between;
+  border-left: none;
+  border-right: none;
+  padding-left: 0.4rem !important;
+  padding-right: 0.4rem !important;
+}
+.Calendars .calendar-date {
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.Calendars.calendar.calendar-lg .date-item {
+  align-self: center;
+}
+
+.Calendars.calendar.calendar-lg .calendar-body .calendar-date {
+  height: auto;
+}
+
+.MenuBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 0.05rem solid #dadee4;
+}
+.MenuBar .columns {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+.MenuBar .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MenuBar .menu-item {
+  width: 40px;
+  fill: #707070;
+}
+.MenuBar .menu-title {
+  display: block;
+  padding-top: 0.4rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #606060;
 }
