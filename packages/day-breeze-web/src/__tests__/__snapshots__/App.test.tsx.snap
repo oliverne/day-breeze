@@ -7,7 +7,7 @@ exports[`<App /> 에러 없이 렌더링 1`] = `
     tabindex="-1"
   >
     <div
-      class="home"
+      class="Home"
     >
       <div
         class="hero"
@@ -28,7 +28,7 @@ exports[`<App /> 에러 없이 렌더링 1`] = `
               class="btn btn-lg login"
               type="button"
             >
-              FREE LOGIN
+              DEMO LOGIN
             </button>
           </a>
         </div>
