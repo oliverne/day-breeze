@@ -1,4 +1,4 @@
-import { useReducer } from 'react'
+import { useReducer, useCallback } from 'react'
 import { itemReducer, IBrzItem, ADD_ITEM } from './itemReducer'
 
 interface IUseBrzItem {
@@ -26,12 +26,15 @@ const createPayload = (content = '') => {
 export function useBrzItem(): IUseBrzItem {
   const [items, dispatch] = useReducer(itemReducer, [])
 
-  const addItem = (content = '') => {
-    dispatch({
-      type: ADD_ITEM,
-      payload: createPayload(content)
-    })
-  }
+  const addItem = useCallback(
+    (content = '') => {
+      dispatch({
+        type: ADD_ITEM,
+        payload: createPayload(content)
+      })
+    },
+    [dispatch]
+  )
 
   return {
     items,
