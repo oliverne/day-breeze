@@ -22,15 +22,15 @@ export function MenuBar() {
           </Link>
         </div>
         <div className="column">
-          <Link to="/calendar" getProps={isActive} className="menu-link">
-            <SVG src={iconCalendar} className="menu-item" />
-            <span className="menu-title">Calendar</span>
-          </Link>
-        </div>
-        <div className="column">
           <Link to="/list" getProps={isActive} className="menu-link">
             <SVG src={iconList} className="menu-item" />
             <span className="menu-title">List</span>
+          </Link>
+        </div>
+        <div className="column">
+          <Link to="/calendar" getProps={isActive} className="menu-link">
+            <SVG src={iconCalendar} className="menu-item" />
+            <span className="menu-title">Calendar</span>
           </Link>
         </div>
         <div className="column">
