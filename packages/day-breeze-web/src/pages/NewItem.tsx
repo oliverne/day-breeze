@@ -6,7 +6,7 @@ export const NewItem: React.FC<RouteComponentProps> = () => {
     <div className="NewItem">
       <div className="content">
         <h1>
-          <cite>New Item</cite> 🍃
+          <cite>New Item</cite> 💦
         </h1>
       </div>
     </div>
