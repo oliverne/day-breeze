@@ -34,7 +34,7 @@ export function MenuBar() {
           </Link>
         </div>
         <div className="column">
-          <Link to="new" getProps={isActive} className="menu-link">
+          <Link to="/new" getProps={isActive} className="menu-link">
             <SVG src={iconWrite} className="menu-item" />
             <span className="menu-title">New</span>
           </Link>

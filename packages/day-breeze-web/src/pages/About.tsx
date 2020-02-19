@@ -1,6 +1,5 @@
 import React from 'react'
 import { RouteComponentProps } from '@reach/router'
-import { MenuBar } from '../components/MenuBar'
 
 export const About: React.FC<RouteComponentProps> = () => {
   return (
@@ -15,8 +14,8 @@ export const About: React.FC<RouteComponentProps> = () => {
         </p>
         <h4>Who&#39;s made by?</h4>
         <p>
-          Hi, I&#39;m <cite>Oliver</cite>, and also which was my best cat&#39;s name. I work
-          as a front-end engineer for a small company in Korea.
+          Hi, I&#39;m <cite>Oliver</cite>, and also which was my best cat&#39;s
+          name. I work as a front-end engineer for a small company in Korea.
         </p>
         <p>
           If you have any suggestions or issues, please feel free to{' '}
@@ -49,7 +48,6 @@ export const About: React.FC<RouteComponentProps> = () => {
           </a>
         </p>
       </div>
-      <MenuBar />
     </div>
   )
 }
