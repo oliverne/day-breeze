@@ -30,7 +30,7 @@ export const About: React.FC<RouteComponentProps> = () => {
             Daria Rudyk
           </a>{' '}
           on{' '}
-          <a href="/s/photos/breeze?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+          <a href="https://unsplash.com/s/photos/calendar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
             Unsplash
           </a>
           <br />

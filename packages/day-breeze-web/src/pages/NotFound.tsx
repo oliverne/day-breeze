@@ -12,7 +12,7 @@ export const NotFound: React.FC<RouteComponentProps> = () => {
         <p className="empty-subtitle">Sorry, Something is wrong!</p>
         <div className="empty-action">
           <Link to="/calendar" className="btn btn-primary">
-            Return
+            Home
           </Link>
         </div>
       </div>
