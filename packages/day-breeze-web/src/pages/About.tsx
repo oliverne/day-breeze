@@ -12,7 +12,7 @@ export const About: React.FC<RouteComponentProps> = () => {
           ...is a demo web-app, which is powered by many open-source projects
           and built for personal purposes only.
         </p>
-        <h4>Who&#39;s made by?</h4>
+        <h3>Who&#39;s made by?</h3>
         <p>
           Hi, I&#39;m <cite>Oliver</cite>, and also which was my best cat&#39;s
           name. I work as a front-end engineer for a small company in Korea.
@@ -26,8 +26,8 @@ export const About: React.FC<RouteComponentProps> = () => {
         <h4>Licenses</h4>
         <p>
           Photo by{' '}
-          <a href="https://unsplash.com/@simplethemes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-            Casey Lee
+          <a href="https://unsplash.com/@rudyirudyk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Daria Rudyk
           </a>{' '}
           on{' '}
           <a href="/s/photos/breeze?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
