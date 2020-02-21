@@ -37,7 +37,7 @@ export const About: React.FC<RouteComponentProps> = () => {
           Icons made by{' '}
           <a
             href="https://www.flaticon.com/authors/mynamepong"
-            title="https://www.flaticon.com/authors/mynamepong"
+            title="mynamepong"
           >
             mynamepong
           </a>{' '}

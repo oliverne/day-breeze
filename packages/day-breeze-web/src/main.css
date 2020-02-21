@@ -28,6 +28,9 @@ a {
 a:visited {
   color: var(--Green3);
 }
+.btn {
+  min-width: 3.6rem;
+}
 .btn.btn-primary {
   background: var(--Green2);
   border-color: var(--Green1);
@@ -240,7 +243,4 @@ p + p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.ButtonGroup .btn {
-  min-width: 3.6rem;
 }
