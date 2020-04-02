@@ -13,7 +13,7 @@ export function Calendars() {
   } = useCalendar()
 
   return (
-    <div className="calendar calendar-lg">
+    <div className="calendar calendar-lg Calendars">
       <div className="calendar-nav navbar">
         <button
           onClick={goPrevMonth}

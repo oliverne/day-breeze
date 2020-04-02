@@ -11,6 +11,9 @@ module.exports = {
   moduleNameMapper: {
     '^/src/(.*)$': '<rootDir>/src/$1'
   },
+  transform: {
+    '\\.svg$': '<rootDir>/fileTransformer.js'
+  },
   collectCoverage: false,
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{js,jsx,ts,tsx}',

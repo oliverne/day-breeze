@@ -9,7 +9,7 @@
       "request": "attach",
       "name": "Attach to Chrome",
       "port": 9222,
-      "urlFilter": "http://localhost:9000*",
+      "urlFilter": "http://localhost:5000*",
       "webRoot": "${workspaceFolder}/src",
       "sourceMapPathOverrides": {
         "webpack:///./src/*": "${webRoot}/*",
@@ -22,7 +22,7 @@
       "type": "chrome",
       "request": "launch",
       "name": "Launch Chrome",
-      "url": "http://localhost:9000",
+      "url": "http://localhost:5000",
       "webRoot": "${workspaceFolder}/src",
       "sourceMapPathOverrides": {
         "webpack:///./src/*": "${webRoot}/*",

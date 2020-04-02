@@ -3,7 +3,7 @@
 exports[`<Calendars /> 스냅샷 1`] = `
 <DocumentFragment>
   <div
-    class="calendar calendar-lg"
+    class="calendar calendar-lg Calendars"
   >
     <div
       class="calendar-nav navbar"

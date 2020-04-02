@@ -1,39 +1,246 @@
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
 body {
   font-family: 'bitter', sans-serif;
+  --MenuBarHeight: 4.95rem;
+  --Green1: #116400;
+  --Green2: #2e9200;
+  --Green3: #71b800;
+  --Green4: #9eec00;
+  --BorderColor: #dae4e0;
 }
-.home {
+a {
+  color: var(--Green2);
+}
+a:visited {
+  color: var(--Green3);
+}
+.btn {
+  min-width: 3.6rem;
+}
+.btn.btn-primary {
+  background: var(--Green2);
+  border-color: var(--Green1);
+}
+.btn.btn-link {
+  color: var(--Green2);
+}
+.btn.btn-link.active,
+.btn.btn-link:active,
+.btn.btn-link:focus,
+.btn.btn-link:hover {
+  color: var(--Green3);
+}
+.h1,
+h1 {
+  font-size: 1.75rem;
+}
+.h3,
+h3 {
+  font-size: 1.25rem;
+}
+.h4,
+h4 {
+  font-size: 1.15rem;
+}
+p + p {
+  margin-top: -0.75rem;
+}
+
+.form-input:focus {
+  border-color: var(--Green3);
+  box-shadow: 0 0 0 0.1rem rgba(113, 184, 0, 0.2);
+}
+.Home {
   text-align: center;
-  background: url(./images/bg-breeze.jpg);
+  background: url(./images/bg-main-1-resized.jpg);
   background-size: cover;
-  background-position: 50% 50%;
   color: rgba(255, 255, 255, 0.7);
 }
-.home .hero {
-  height: 100vh;
+.Home .hero {
+  box-sizing: border-box;
+  height: calc((var(--vh, 1vh) * 100));
   padding-top: 6rem;
+  background: rgba(0, 0, 0, 0.4);
 }
-.home .hero-body {
+.Home .hero-body {
   padding: 0 2rem;
 }
-.home h1 {
+.Home h1 {
   letter-spacing: -1px;
-  font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.65);
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   padding-bottom: 0.4em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.3em;
 }
-.home .login {
+.Home .login {
   position: relative;
   top: 48vh;
   border-radius: 5px;
   font-size: 0.75rem;
-  padding-left: 5em;
-  padding-right: 5em;
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
+  padding-left: 2.8em;
+  padding-right: 2.8em;
+  background-color: var(--Green1);
+  opacity: 0.7;
+  border-color: var(--Green2);
   color: rgba(255, 255, 255, 0.9);
 }
-.calendar.calendar-lg .calendar-body .calendar-date {
-  height: 4rem;
+
+.Calendars.calendar {
+  box-sizing: border-box;
+  border: none;
+  height: calc((var(--vh, 1vh) * 100));
+}
+.Calendars .calendar-nav {
+  background: none;
+  padding: 0.8rem 0.4rem 0.6rem 0.4rem;
+}
+.Calendars .calendar-header {
+  background: none;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.Calendars .calendar-container {
+  height: calc(100% - var(--MenuBarHeight));
+}
+.Calendars .calendar-body {
+  /* calendar-nav: 68px, calendar-header: 46px */
+  height: calc(100% - 68px - 46px);
+  justify-content: space-between;
+  border-left: none;
+  border-right: none;
+  padding-left: 0.4rem !important;
+  padding-right: 0.4rem !important;
+}
+.Calendars .calendar-date {
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.Calendars.calendar.calendar-lg .date-item {
+  align-self: center;
+}
+
+.Calendars.calendar.calendar-lg .calendar-body .calendar-date {
+  height: auto;
+}
+
+.MenuBar {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 0.05rem solid var(--BorderColor);
+  background-color: #fff;
+}
+.MenuBar .columns {
+  padding-top: 0.85rem;
+  padding-bottom: 0.8rem;
+}
+.MenuBar .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MenuBar .menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.MenuBar .menu-item {
+  width: 1.8rem;
+  fill: #707070;
+}
+.MenuBar .menu-title {
+  display: block;
+  padding-top: 0.4rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #606060;
+}
+.MenuBar .active {
+  text-decoration: none;
+}
+.MenuBar .active .menu-item {
+  fill: var(--Green2) !important;
+}
+.MenuBar .active .menu-title {
+  color: var(--Green2) !important;
+}
+
+.NotFound {
+  height: calc((var(--vh, 1vh) * 100) - var(--MenuBarHeight));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.NotFound .empty {
+  background: none;
+}
+
+.About .content {
+  padding: 2.5rem 2rem 5rem 2rem;
+}
+
+.NewItem {
+  position: relative;
+  height: calc((var(--vh, 1vh) * 100) - var(--MenuBarHeight));
+}
+
+.NewItem .header {
+  box-sizing: border-box;
+  min-height: 7.25rem;
+  padding-top: 2rem;
+}
+.NewItem h3 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.Tags {
+  text-align: center;
+  margin-top: .5rem;
+  padding: 1rem 0 .5rem 0;
+}
+.Tags .label {
+  margin: 0 0.2rem;
+  font-size: 1.5rem;
+}
+
+.TextForm {
+  padding: 1rem;
+}
+.TextForm textarea {
+  height: calc((var(--vh, 1vh) * 100) - var(--MenuBarHeight) - 12.3rem);
+  border: none;
+}
+
+.ButtonGroup {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

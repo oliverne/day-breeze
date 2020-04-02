@@ -23,6 +23,7 @@ module.exports = {
   mode: IS_DEV ? 'development' : 'production',
   devtool: IS_DEV ? 'inline-source-map' : 'source-map',
   devServer: {
+    host: '0.0.0.0',
     port: 5000,
     overlay: true,
     hot: true,
@@ -44,9 +45,13 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
       { test: /\.txt$/, use: 'raw-loader' },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|jpg|gif)$/,
         use: [
           {
             loader: 'file-loader',

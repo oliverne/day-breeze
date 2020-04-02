@@ -23,9 +23,8 @@
     "start": "yarn build && node dist/main.js",
     "dev": "cross-env NODE_ENV=development ts-node-dev --debounce 1000 --watch src/**/*.ts -- src/main.ts",
     "build": "rimraf dist/* && cross-env NODE_ENV=production tsc --build --pretty",
-    "test": "jest --runInBand --verbose",
-    "test:watch": "jest --bail --watch",
-    "test:coverage": "jest --coverage"
+    "test": "jest --verbose",
+    "test:watch": "jest --runInBand --bail --watch"
   },
   "dependencies": {
     "lodash": "4.17.15"
