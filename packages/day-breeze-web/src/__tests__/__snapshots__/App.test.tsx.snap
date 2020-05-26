@@ -16,10 +16,12 @@ exports[`<App /> 에러 없이 렌더링 1`] = `
           class="hero-body"
         >
           <h1>
-            Day Breeze
+            <cite>
+              Day Breeze
+            </cite>
           </h1>
           <p>
-            Daily Memo
+            for Daily Memo
           </p>
           <a
             href="/calendar"
