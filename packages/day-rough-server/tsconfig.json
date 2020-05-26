@@ -6,6 +6,7 @@
     "noImplicitAny": true,
     "outDir": "dist",
     "declaration": false,
+    "strict": true,
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
