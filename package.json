@@ -3,7 +3,7 @@
   "scripts": {
     "clean": "lerna clean",
     "test:unit": "lerna exec -- yarn test --coverage --ci",
-    "dev:web": "lerna exec --scope @olv/day-breeze-web -- yarn dev"
+    "dev": "lerna exec --scope @olv/day-breeze-web -- yarn dev"
   },
   "workspaces": [
     "packages/*"
