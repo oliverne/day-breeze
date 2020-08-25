@@ -27,7 +27,7 @@
     "test:watch": "jest --runInBand --bail --watch"
   },
   "dependencies": {
-    "lodash": "4.17.15"
+    "lodash": "4.17.19"
   },
   "devDependencies": {
     "@types/jest": "26.0.0",
